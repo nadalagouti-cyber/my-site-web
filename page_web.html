@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning English</title>
+    <meta name="author" content="Nada Lagouti">
+    <link rel="stylesheet" href="page_web.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <img src="logo.png" class="logo" alt="Logo">
+    <h1>Start your journey in learning English</h1>
+    <nav>
+        <ul class="menu">
+
+            <li><button><a href="page_web.html">home</a></button></li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Topics</button>
+                <ul class="submenu">
+                    <li><a href="easy.html">Easy</a></li>
+                    <li><a href="normal.html">normal</a></li>
+                    <li><a href="hard.html">advanced</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Levels</button>
+                <ul class="submenu">
+                    <li>Beginner</li>
+                    <li>Normal</li>
+                    <li>Advanced</li>
+                </ul>
+            </li>
+
+            <li><button><a href="advices.html">advices</a></button></li>
+             <li><button><a href="formulair.html">sign in</a></button></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="section">
+    <div class="left">
+        <img src="https://i.pinimg.com/736x/87/53/ae/8753ae0aa90e74c34cffca9bb21766e2.jpg" id="image">
+    </div>
+
+    <div class="right">
+        <img id="slider" src="" alt="Slider Image">
+        <p id="caption">Reading</p>
+
+        <p>
+ Join Nada&English, the web site  that makes learning English easy and enjoyable.
+Whether you are a beginner or advanced, our interactive lessons,storys,
+ and personalized tips will help you improve your pronunciation, reading, writing, and listening skills.
+Learn at your own pace, whenever and wherever you want, and achieve your goals faster than ever.
+        </p>
+
+        <h1>Find out your English level today!</h1>
+
+        <a href="https://test.glite.ai/" class="btn">Get Started</a>
+    </div>
+</div>
+
+
+
+<footer>© 2026 Nada English</footer>
+
+<script>
+const slides = [
+  {
+    img: "https://tse4.mm.bing.net/th/id/OIP.o8daW3CF-ypp8kCnXUdZNwHaEN",
+    text: "Listening: Improve comprehension and pronunciation."
+  },
+  {
+    img: "https://tse4.mm.bing.net/th/id/OIP.8FPET5kgK7wMAwSbyEgc_wHaE8",
+    text: "Reading: Learn vocabulary and sentence structure."
+  },
+  {
+    img: "https://tse2.mm.bing.net/th/id/OIP.qNzBhsC7cCz-AjuZ9kXB8gHaEK",
+    text: "Writing: Express ideas clearly and correctly."
+  }
+];
+
+let index = 0;
+const slider = document.getElementById("slider");
+const caption = document.getElementById("caption");
+
+slider.src = slides[0].img;
+caption.textContent = slides[0].text;
+
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  slider.src = slides[index].img;
+  caption.textContent = slides[index].text;
+}, 3000);
+</script>
+
+</body>
+</html>

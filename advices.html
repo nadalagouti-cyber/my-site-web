@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning English</title>
+    <meta name="author" content="Nada Lagoti">
+    <link rel="stylesheet" href="page_web.css">
+</head>
+<body>
+<header class="navbar">
+    <img src="logo.png" class="logo" alt="Logo">
+    <h1>Start your journey in learning English</h1>
+    <nav>
+        <ul class="menu">
+
+            <li><button><a href="page_web.html">home</a></button></li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Topics</button>
+                <ul class="submenu">
+                    <li><a href="easy.html">Easy</a></li>
+                    <li><a href="normal.html">normal</a></li>
+                    <li><a href="hard.html">advanced</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <button class="dropbtn">Levels</button>
+                <ul class="submenu">
+                    <li>Beginner</li>
+                    <li>Normal</li>
+                    <li>Advanced</li>
+                </ul>
+            </li>
+
+            <li><button><a href="advices.html">advices</a></button></li>
+             <li><button><a href="formulair.html">sign in</a></button></li>
+
+        </ul>
+    </nav>
+</header>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   background-image:url(https://i.pinimg.com/736x/04/53/75/045375283ac971d1b1f20a0eeb471e9f.jpg);
+    color: white;
+}
+
+.header2 {
+    background-color: #bbb3b3;
+    padding: 5px;
+    text-align: center;
+    color: #8d0b0b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #910101;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+   
+}
+
+.card:hover {
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+    color: #1b1a1a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.4;
+}
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header2">English Learning Advices</div>
+
+<div class="container">
+    <div class="cards">
+
+        <div class="card">
+            <h3>Read Every Day</h3>
+            <p>Reading English books, articles, or news daily will help you expand your vocabulary and understand sentence structures.</p>
+        </div>
+
+        <div class="card">
+            <h3>Watch English Movies</h3>
+            <p>Watching films or series in English with subtitles improves listening skills and pronunciation in a fun way.</p>
+        </div>
+
+        <div class="card">
+            <h3>Practice Speaking</h3>
+            <p>Speak English every day, even with yourself, to gain fluency and confidence in forming sentences.</p>
+        </div>
+
+        <div class="card">
+            <h3>Use Language Apps</h3>
+            <p>Apps like Duolingo or Babbel are excellent tools to practice vocabulary, grammar, and daily exercises.</p>
+        </div>
+
+        <div class="card">
+            <h3>Write a Journal</h3>
+            <p>Write short paragraphs or daily journals in English to improve your writing and expression skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Listen to Podcasts</h3>
+            <p>English podcasts and audiobooks help you develop listening comprehension and familiarize yourself with natural speech.</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
